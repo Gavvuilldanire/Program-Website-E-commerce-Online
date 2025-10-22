@@ -1,0 +1,331 @@
+/* style.css */
+
+/* Pengaturan Dasar (dari PDF) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6ff;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+h1, h2 {
+    text-align: center;
+    color: navy;
+}
+
+/* Navigasi (dari PDF) */
+header {
+    /* Menjaga nav tetap di dalam header untuk struktur yg baik */
+    background-color: navy;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex; /* Membuat link sejajar */
+    justify-content: center; /* Menengahkan link */
+    padding: 12px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700; /* Warna hover emas */
+}
+
+/* Style khusus untuk tombol "Jual" di Nav */
+nav a.nav-jual {
+    background-color: #ffd700;
+    color: navy;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 30px; /* Jarak */
+}
+nav a.nav-jual:hover {
+    background-color: #fff;
+}
+
+
+/* Konten Utama & Section (dari PDF) */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Kartu Produk (Layout dari Jawaban 1, Style dari PDF) */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0 5px 0;
+    font-weight: bold;
+    color: #003366; /* Biru tua (dari PDF figcaption) */
+}
+
+.product-card .rating {
+    font-size: 0.9rem;
+    color: #f39c12;
+}
+
+.product-card .specs {
+    font-size: 0.9rem;
+    color: #555;
+    min-height: 40px; /* Jaga ketinggian agar sejajar */
+}
+
+.product-card .price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: navy; /* Sesuai tema */
+    margin: 10px 0;
+}
+
+/* Tombol (Style dari PDF) */
+.detail-btn {
+    display: inline-block;
+    background-color: navy;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.detail-btn:hover {
+    background-color: darkblue;
+}
+
+/* Tabel Harga (dari PDF) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #003366; /* Biru tua (dari PDF) */
+    color: white;
+}
+
+/* Profil Penjual (dari PDF) */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Agar responsif */
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid navy;
+    object-fit: cover;
+}
+
+.profile-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Alamat / Peta (dari PDF) */
+.map {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.map iframe {
+    border-radius: 10px;
+    border: 2px solid navy;
+    max-width: 100%;
+}
+
+/* Footer (dari PDF) */
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* Styling Halaman Tambah.html */
+.form-container {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submit-btn {
+    /* Style disamakan dengan tombol navy */
+    display: inline-block;
+    background-color: navy;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: darkblue;
+}
+
+/* ... (SEMUA CSS DARI JAWABAN SEBELUMNYA TETAP DI SINI) ... */
+
+/* Style tambahan untuk Navigasi Admin */
+nav a.nav-admin {
+    background-color: #d9534f; /* Merah */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+nav a.nav-admin:hover {
+    background-color: #c9302c;
+}
+
+/* Style untuk Halaman Admin.php */
+.admin-container {
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.status-message {
+    padding: 15px;
+    background-color: #dff0d8; /* Hijau sukses */
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table th, 
+.admin-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.admin-table th {
+    background-color: #003366;
+    color: white;
+}
+
+.admin-thumb {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.btn-hapus {
+    display: inline-block;
+    background-color: #d9534f; /* Merah */
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-hapus:hover {
+    background-color: #c9302c;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual Laptop Anda - Gantarugavr Tech Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="laptopku.php#home">Beranda</a>
+            <a href="laptopku.php#harga">Harga Laptop</a>
+            <a href="laptopku.php#profil">Profil Penjual</a>
+            <a href="laptopku.php#alamat">Alamat Toko</a>
+            <a href="tambah.html" class="nav-jual">Jual Laptop</a>
+            <a href="admin.php" class="nav-admin">Admin Menu</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Formulir Jual Laptop</h2>
+            <p>Isi detail di bawah ini untuk menampilkan laptop Anda di website kami.</p>
+
+            <form action="proses_tambah.php" method="POST" enctype="multipart/form-data">
+                
+                <div class="form-group">
+                    <label for="nama_laptop">Nama Laptop (Merek dan Model)</label>
+                    <input type="text" id="nama_laptop" name="nama_laptop" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="harga">Harga (Rupiah)</label>
+                    <input type="number" id="harga" name="harga" placeholder="Contoh: 15000000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Rating (1-5)</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" step="0.1" placeholder="Contoh: 4.5" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="deskripsi">Spesifikasi Singkat</label>
+                    <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Contoh: Ryzen 9, RTX 4060, RAM 16GB"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="gambar">Gambar Laptop</label>
+                    <input type="file" id="gambar" name="gambar" accept="image/*" required>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="submit-btn">Tambah Produk</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Gantarugavr Tech Shop. Semua hak dilindungi.</p>
+    </footer>
+
+</body>
+</html>

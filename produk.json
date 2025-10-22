@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1761118857,
+        "nama_laptop": "MSI Titan 18 HX (A14V \/ A2X)",
+        "harga": 69000000,
+        "rating": 4.7,
+        "deskripsi": "CPU: Intel Core i9-14900HX atau Core Ultra 9 285HX\r\n\r\nGPU: NVIDIA GeForce RTX 4080 \/ 4090, hingga RTX 5090\r\n\r\nRAM: 64GB hingga 128GB DDR5\r\n\r\nStorage: 2TB \/ 4TB \/ 6TB NVMe SSD\r\n\r\nLayar: 18-inch 4K UHD+ (3840x2400) 120Hz Mini LED",
+        "gambar": "uploads\/1761118857.jpg"
+    },
+    {
+        "id": 1761119057,
+        "nama_laptop": "Lenovo Legion Pro 7i (Gen 9 \/ Gen 10)",
+        "harga": 61750000,
+        "rating": 4.5,
+        "deskripsi": "CPU: Intel Core i9-14900HX atau Core Ultra 9 275HX\r\n\r\nGPU: NVIDIA GeForce RTX 4070, RTX 5070 Ti, hingga RTX 5090\r\n\r\nRAM: 32GB atau 64GB DDR5\r\n\r\nStorage: 1TB atau 2TB NVMe SSD\r\n\r\nLayar: 16-inch WQXGA (2560x1600) 240Hz IPS atau OLED",
+        "gambar": "uploads\/1761119057.jpg"
+    },
+    {
+        "id": 1761119137,
+        "nama_laptop": "Razer Blade 16 (2024)",
+        "harga": 81990000,
+        "rating": 5,
+        "deskripsi": "CPU: Intel Core i9-14900HX\r\n\r\nGPU: NVIDIA GeForce RTX 4070 \/ 4080 \/ 4090\r\n\r\nRAM: 16GB \/ 32GB \/ 64GB DDR5\r\n\r\nStorage: 1TB \/ 2TB NVMe SSD\r\n\r\nLayar: 16-inch QHD+ (2560x1600) 240Hz OLED (layar dual-mode Mini LED juga tersedia)",
+        "gambar": "uploads\/1761119137.jpg"
+    }
+]
